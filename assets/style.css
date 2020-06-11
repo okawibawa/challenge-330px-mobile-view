@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Lato, sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 20px;
+  padding-bottom: 0;
+}
+
+.purple-bg {
+  background-color: #5f2967;
+  color: white;
+  height: 210px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .burger-menu,
+nav h1,
+nav .notification-icon {
+  cursor: pointer;
+}
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar {
+  background-color: #fff;
+  border-radius: 4px;
+  height: 40px;
+  padding: 0 14px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: gray;
+  width: 80%;
+}
+
+.search-bar p {
+  width: 70%;
+  font-size: 0.8rem;
+}
+
+.search-bar img {
+  /* border-left: 2px dashed lightgray; */
+  /* width: 20%; */
+}
+
+.plus-bar {
+  background-color: rgba(211, 211, 211, 0.4);
+  width: 15%;
+  cursor: pointer;
+  display: flex;
+}
+
+.plus-bar img {
+  color: white;
+  opacity: initial;
+  margin: auto;
+}
+
+/* Main style */
+.section-mg {
+  margin-bottom: 40px;
+}
+
+.section-mg:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.offwhite-bg {
+  background-color: #ebebf6;
+  position: relative;
+}
+
+.offwhite-bg::before {
+  content: '';
+  background-image: url('/assets/img/clouds.png');
+  position: absolute;
+  top: -40px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4;
+  background-size: contain;
+  background-origin: top;
+  background-repeat: no-repeat;
+}
+.card-section {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 15px;
+  /* margin: 5px; */
+  color: #7b7b7b;
+  font-size: 0.6rem;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 0 16px 0 rgba(165, 165, 165, 0.2);
+}
+
+.card-previous {
+  height: 100px;
+}
+
+.card-active {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 250px;
+  margin-left: -15px;
+}
+
+.card-next {
+  height: 148px;
+  transform: translateX(100%);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.row:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.current-balance {
+  width: 60%;
+}
+
+.card-name {
+  width: 30%;
+}
+
+.amount {
+  color: #5f2967;
+  font-weight: 900;
+}
+
+.code {
+  letter-spacing: 1px;
+}
+
+.verified-check {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+}
+
+.dots {
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  align-items: center;
+}
+
+.first-dot,
+.dot,
+.third-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: lightgray;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot {
+  text-align: center;
+  margin: auto;
+  background-color: #00779b;
+}
+
+.second-dot.active {
+  border: 2px solid #00779b;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  display: flex;
+}
+
+.third-dot {
+  background-color: dimgray;
+}
+
+/* Send money section style */
+.sub-title {
+  color: #5f2967;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.card-lists {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: -60px;
+}
+
+.card-list {
+  background-color: #fff;
+  padding: 5px 10px;
+  margin-right: 15px;
+  border-radius: 6px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+
+.card-list img {
+  margin-bottom: 2px;
+  border-radius: 50%;
+  padding: 2px;
+  width: 27px;
+  height: 28px;
+}
+
+.card-list.active {
+  color: black;
+}
+
+.card-list.active img {
+  border: 1px dashed rgb(32, 32, 238);
+}
+
+.add-new {
+  background-color: transparent;
+  border: 2px dashed gray;
+}
+
+.sub-titles-recent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgray;
+}
+
+.sub-titles-recent img {
+  margin-bottom: 15px;
+}
+
+.detail-transaction {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.detail-transaction h6 {
+  padding-bottom: 5px;
+}
+
+.detail-transaction p {
+  font-size: 0.6rem;
+  color: #7b7b7b;
+}
+
+.detail-transaction .price {
+  font-weight: 900;
+  color: black;
+}
+
+.detail-transaction .bg-white {
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.details {
+  width: 70%;
+}
