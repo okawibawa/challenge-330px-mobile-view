@@ -40,6 +40,7 @@ nav .notification-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .bar {
@@ -54,12 +55,18 @@ nav .notification-icon {
   align-items: center;
   justify-content: space-between;
   color: gray;
+  border: none;
   width: 80%;
 }
 
 .search-bar p {
-  width: 70%;
   font-size: 0.8rem;
+}
+
+.search-bar img {
+  background-color: #fff;
+  border-left: 2px dashed lightgray;
+  padding-left: 10px;
 }
 
 .icon {
@@ -114,6 +121,7 @@ nav .notification-icon {
 .card-section {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: relative;
 }
 
@@ -121,7 +129,6 @@ nav .notification-icon {
   background-color: #fff;
   border-radius: 6px;
   padding: 15px;
-  /* margin: 5px; */
   color: #7b7b7b;
   font-size: 0.6rem;
   position: relative;
@@ -139,12 +146,12 @@ nav .notification-icon {
   justify-content: space-between;
   flex-direction: column;
   width: 250px;
-  margin-left: -15px;
+  margin-left: -40px;
 }
 
 .card-next {
   height: 138px;
-  transform: translateX(80%);
+  margin-right: -25px;
 }
 
 .row {
