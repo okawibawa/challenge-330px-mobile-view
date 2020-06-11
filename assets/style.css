@@ -9,9 +9,11 @@
 body {
   font-family: Lato, sans-serif;
   overflow-x: hidden;
+  width: 100%;
 }
 
 .container {
+  overflow-x: hidden;
   padding: 20px;
   padding-bottom: 0;
 }
@@ -60,9 +62,12 @@ nav .notification-icon {
   font-size: 0.8rem;
 }
 
-.search-bar img {
-  /* border-left: 2px dashed lightgray; */
-  /* width: 20%; */
+.icon {
+  border-left: 2px dashed lightgray;
+}
+
+.icon img {
+  padding-left: 10px;
 }
 
 .plus-bar {
@@ -70,6 +75,7 @@ nav .notification-icon {
   width: 15%;
   cursor: pointer;
   display: flex;
+  padding: 8px;
 }
 
 .plus-bar img {
@@ -94,7 +100,7 @@ nav .notification-icon {
 
 .offwhite-bg::before {
   content: '';
-  background-image: url('/assets/img/clouds.png');
+  background-image: url('./img/clouds.png');
   position: absolute;
   top: -40px;
   left: 0;
@@ -137,8 +143,8 @@ nav .notification-icon {
 }
 
 .card-next {
-  height: 148px;
-  transform: translateX(100%);
+  height: 138px;
+  transform: translateX(80%);
 }
 
 .row {
@@ -305,4 +311,34 @@ nav .notification-icon {
 
 .details {
   width: 70%;
+}
+
+.detail-transaction h6.red::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #ec5495;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.detail-transaction h6.blue::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #0084a7;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.detail-transaction h6.green::after {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: #47e720;
+  border-radius: 50%;
+  margin-left: 10px;
 }
